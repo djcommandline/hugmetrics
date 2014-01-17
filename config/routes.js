@@ -26,15 +26,16 @@
  *
  */
 
-module.exports.routes = {
+ module.exports.routes = {
 
   // By default, your root route (aka home page) points to a view
   // located at `views/home/index.ejs`
   // 
   // (This would also work if you had a file at: `/views/home.ejs`)
   '/': {
-    view: 'home/index'
-  }
+    // view: 'home/index'
+    view: 'static/home'
+  },
 
   /*
   // But what if you want your home page to display
@@ -93,6 +94,23 @@ module.exports.routes = {
   'get /*(^.*)': 'UserController.profile'
 
   */
+ 
+  // ======================
+  // STATIC CONTENT PAGES
+  // ======================
+  '/page/about': {
+    view: 'static/about'
+  },
+  '/backdoor': {
+    view: 'static/backdoor'
+  },
+  '/page/contact': {
+    view: 'static/contact'
+  },
+  '/page/terms': {
+    view: 'static/terms'
+  }
+
 };
 
 
