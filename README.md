@@ -2,6 +2,24 @@ Hugmetrics
 ================================
 A project for learning node
 
+GIT COMMIT KEYWORDS
+================================
+close
+closes
+closed
+fix
+fixes
+fixed
+resolve
+resolves
+resolved
+
+GIT ISSUE TOOLS
+================================
+https://github.com/stephencelis/ghi
+
+
+
 Questions
 ================================
 - [x] how to keep node running
@@ -30,8 +48,13 @@ Routes
 
 Running Sails on Forever
 ================================
-$ forever -w start app.js  
+`$ forever -w start app.js`  
 
-To avoid infinite restart because Sails writes into .tmp folder, 
-you can create a .foreverignore file into your project directory  
-**/.tmp/** 
+Don't forget to run npm install
+
+To avoid infinite restart because Sails writes into .tmp folder,
+
+you can create a .foreverignore file into your project directory
+
+`**/.tmp/**`
+
