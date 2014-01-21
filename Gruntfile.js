@@ -56,6 +56,9 @@ module.exports = function (grunt) {
     // automatic listener for incoming messages from Socket.io.
     'linker/js/app.js',
 
+    // Jquery
+    'linker/js/jquery.js',
+
     // *->    put other dependencies here   <-*
 
     // All of the rest of your app scripts imported here
@@ -255,7 +258,7 @@ module.exports = function (grunt) {
       devJs: {
         options: {
           startTag: '<!--SCRIPTS-->',
-          endTag: '<!--SCRIPTS END-->',
+          endTag: '<!--/SCRIPTS-->',
           fileTmpl: '<script src="%s"></script>',
           appRoot: '.tmp/public'
         },
@@ -269,7 +272,7 @@ module.exports = function (grunt) {
       prodJs: {
         options: {
           startTag: '<!--SCRIPTS-->',
-          endTag: '<!--SCRIPTS END-->',
+          endTag: '<!--/SCRIPTS-->',
           fileTmpl: '<script src="%s"></script>',
           appRoot: '.tmp/public'
         },
@@ -283,7 +286,7 @@ module.exports = function (grunt) {
       devStyles: {
         options: {
           startTag: '<!--STYLES-->',
-          endTag: '<!--STYLES END-->',
+          endTag: '<!--/STYLES-->',
           fileTmpl: '<link rel="stylesheet" href="%s">',
           appRoot: '.tmp/public'
         },
@@ -299,7 +302,7 @@ module.exports = function (grunt) {
       prodStyles: {
         options: {
           startTag: '<!--STYLES-->',
-          endTag: '<!--STYLES END-->',
+          endTag: '<!--/STYLES-->',
           fileTmpl: '<link rel="stylesheet" href="%s">',
           appRoot: '.tmp/public'
         },
